@@ -2,8 +2,6 @@ use Mix.Config
 
 # Configure your database
 config :petal, Petal.Repo,
-  username: "postgres",
-  password: "postgres",
   database: "petal_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
