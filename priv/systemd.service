@@ -1,0 +1,25 @@
+# As root:
+# copy this file to /etc/systemd/system/petal-production.service
+# systemctl daemon-reload
+# systemctl start petal-production.service
+
+[Unit]
+Description=Petal-Prod
+After=network.target
+
+[Service]
+Type=simple
+User=petal
+Group=petal
+WorkingDirectory=/home/petal
+ExecStart=/home/petal/bin/petal start
+ExecStop=/home/petal/bin/petal stop
+Restart=on-failure
+RestartSec=5
+EnvironmentFile=/home/petal/env.prod
+SyslogIdentifier=petal_prod
+RemainAfterExit=no
+
+[Install]
+WantedBy=multi-user.target
+
