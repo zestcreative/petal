@@ -3,8 +3,8 @@
   "description": " ",
   "license": "MIT",
   "scripts": {
-    "deploy": "webpack --mode production",
-    "watch": "NODE_ENV=production webpack --mode development --watch"
+    "deploy": "NODE_ENV=production webpack --mode production",
+    "watch": "webpack --mode development --watch"
   },
   "dependencies": {
     "alpinejs": "^2.8.0",
@@ -14,10 +14,10 @@
     "topbar": "^1.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
     "autoprefixer": "^10.2.4",
-    "babel-loader": "^8.0.0",
+    "babel-loader": "^8.2.2",
     "copy-webpack-plugin": "^6.4.1",
     "css-loader": "^4.3.0",
     "hard-source-webpack-plugin": "^0.13.1",
