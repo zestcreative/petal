@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "deploy": "NODE_ENV=production webpack --mode production",
-    "watch": "webpack --mode development --watch"
+    "watch": "webpack watch --mode development"
   },
   "dependencies": {
     "alpinejs": "^2.8.0",
