@@ -1,5 +1,15 @@
 # Petal
 
+This template is out of date. The earlier hurdles of setting up Tailwind is now made much easier with these official libraries:
+- https://github.com/phoenixframework/tailwind
+- https://github.com/phoenixframework/esbuild
+
+With the introduction of LiveView.JS, there isn't as much of a need for AlpineJS.
+
+Phoenix LiveView has also progressed a lot since the introduction of this template, such as using HEEX templates and Phoenix.Component, providing much better patterns when spinning up new projects. Therefore, this will be archived.
+
+---
+
 Clone this project and rename
 
 ```sh
